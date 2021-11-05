@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
+@section('title','Home Page')
 
-<body>
-  <h1>Hello world!</h1>
-</body>
+@section('content')
 
-</html>
+<h1>Hello World Text!!!</h1>
+@endsection

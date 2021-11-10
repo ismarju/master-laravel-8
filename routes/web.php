@@ -29,11 +29,14 @@ Route::get('/posts/{id}', function ($id) {
     $posts = [
         1 => [
             'title' => 'Intor to PHP',
-            'content' => 'This is short intro to PHP'
+            'content' => 'This is short intro to PHP',
+            'is_new' => true,
+            'has_comments' => true
         ],
         2 => [
-            'title' => 'Intor to JavaScript',
-            'content' => 'This is short intro to JavaScript'
+            'title' => 'Intro to JavaScript',
+            'content' => 'This is short intro to JavaScript',
+            'is_new' => false
         ]
     ];
     abort_if(!isset($posts[$id]), 404); // ovo je helper funcija koja vraća 404 ako se proslijedi neispravan id
